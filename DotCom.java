@@ -1,8 +1,7 @@
-import java.util.ArrayList;
+import java.util.*;
 
 public class DotCom {
   private ArrayList<String> locationCells;
-  int numOfHits = 0;
   private String name;
 
   public void setName (String nameOfDotCom) {
@@ -19,7 +18,7 @@ public class DotCom {
       locationCells.remove(index);
       if (locationCells.isEmpty()) {
         result = "kill";
-        System.out.println("Ouch! You sunk " + name + " :(")
+        System.out.println("Ouch! You sunk " + name + " :(");
       } else {
         result = "hit";
       }
