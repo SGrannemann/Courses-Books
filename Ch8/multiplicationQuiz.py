@@ -16,7 +16,8 @@ for questionNumber in range(numberOfQuestions):
     try:
         # Right answers are handled by allowregexes
         # wrong answers are handled by blockregexes with custom message
-        pyip.inputStr(prompt, allowRegexes=[f'^{(num1 * num2)}$'], blockRegexes=[('.*', 'Incorrect!')], timeout=8, limit=3)
+        pyip.inputStr(prompt, allowRegexes=[f'^{(num1 * num2)}$'],
+                      blockRegexes=[('.*', 'Incorrect!')], timeout=8, limit=3)
     except pyip.TimeoutException:
         print('Out of time!')
     except pyip.RetryLimitException:
