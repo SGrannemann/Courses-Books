@@ -10,5 +10,5 @@ cfd_days = nltk.ConditionalFreqDist((category, word)
                                     for word in brown.words(categories=category)
                                     if word in days)
 
-cfd_days.tabulate(samples=days)
+cfd_days.tabulate()
 cfd_days.plot()
