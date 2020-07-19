@@ -20,7 +20,7 @@ def selectivecopy(folder, extension, destination):
             shutil.copy(file, destination)
 
 
-folder = input()
-extension = input()
-destination = input()
+folder = input('Which folder shall be searched?')
+extension = input('Specify the extension of files that shall be moved.')
+destination = input('Specify the destination directory.')
 selectivecopy(folder, extension, destination)
