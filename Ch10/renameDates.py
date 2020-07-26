@@ -22,7 +22,7 @@ for amerFilename in os.listdir('.'):
     if mo == None:
         continue
 
-# TODO: Get the different parts of the filename
+
     beforePart = mo.group(1)
     monthPart = mo.group(2)
     dayPart = mo.group(4)

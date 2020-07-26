@@ -29,7 +29,7 @@ def fillGaps(folder, prefix, extension):
     # only look through files in the dir if correct extension
     # sort the files to find gaps via an incremented counter
     for file in sorted(Path(folder).glob(f'*.{extension}')):
-        # TODO: make the iterable sorted by integer index (now: 10 comes before 2)
+
         mo = regExObject.search(os.path.basename(file))
         if mo: # ignore any files with the correct extension but wrong prefix
             if int(mo.group(2)) != index: # evaluates to true if there is a gap

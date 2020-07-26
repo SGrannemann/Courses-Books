@@ -27,4 +27,4 @@ new_sentence = ' '.join(split_sentence)
 print(new_sentence)
 new_file = open('Result.txt', 'w')
 new_file.write(new_sentence)
-# TODO: Write the result to a file
+

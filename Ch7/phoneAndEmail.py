@@ -25,7 +25,7 @@ emailRegex = re.compile(r'''(
     )''', re.VERBOSE)
 
 
-# TODO: Find matches in clipboard text
+
 
 text = str(pyperclip.paste())
 
