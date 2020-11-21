@@ -26,7 +26,7 @@ for row in range(2, sheet.max_row + 1):
     countyData[state][county]['pop'] += int(pop)
 
 
-# TODO Open a new text file and write the contents of countyData to it
+
 
 print('Writing results...')
 with open('census2010.py', 'w') as resultFile:
