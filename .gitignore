@@ -3,3 +3,4 @@ tmpqkzvlhjt/
 my_logs/
 .venv/
 .vscode/
+*.db
