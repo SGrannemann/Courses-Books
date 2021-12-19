@@ -4,3 +4,4 @@ my_logs/
 .venv/
 .vscode/
 *.db
+Hands-on ML/datasets/
