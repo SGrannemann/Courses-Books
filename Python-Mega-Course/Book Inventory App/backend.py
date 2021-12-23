@@ -1,8 +1,9 @@
 import sqlite3
+from pathlib import Path
 
 
 def connect():
-    conn = sqlite3.connect('Python-Mega-Course/Book Inventory App/books.db')
+    conn = sqlite3.connect(str(Path.cwd()) + '/books.db')
     cur = conn.cursor()
     cur.execute(
         "CREATE TABLE IF NOT EXISTS book (id INTEGER PRIMARY KEY, title text, author text, year integer, isbn integer)")
@@ -57,9 +58,3 @@ def update(id, title, author, year, isbn):
 
 
 connect()
-#insert('The sea', 'John Tablet', 1918, 2315354132)
-# print(view())
-#print(search(author='John Tablet'))
-# delete(1)
-update(4, 'The sun', 'John Smooth', 1917, 213534)
-print(view())
