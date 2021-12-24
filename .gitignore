@@ -2,8 +2,10 @@ tmpqkzvlhjt/
 *.h5
 my_logs/
 .venv/
+.venvFlask/
 .vscode/
 *.db
 Hands-on ML/datasets/
 Python-Mega-Course/Book Inventory App/dist/
 Python-Mega-Course/Book Inventory App/build/
+Flask-Bootcamp/Flask-Bootcamp-master/
