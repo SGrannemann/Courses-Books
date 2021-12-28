@@ -1,0 +1,22 @@
+{% extends "basic.html" %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1>Welcome to the Flask application {{name}}!</h1>
+    <ul>
+        {% for letter in letters %}
+        <li>{{letter}}</li>
+        {% endfor %}
+    </ul>
+
+    {% if 'Rufus' in puppies %}
+    <p>Found you, Rufus!</p>
+    {% endif %}
+    <h1>{{pup_dictionary['pup_name']}}</h1>
+    <h2> Here is a pic of a puppy!</h2>
+    <img src="../static/puppy_pic.jpg" alt="">
+
+    <a href="{{url_for('signup_form')}}">Sign up for auditions!</a>
+</div>
+
+{% endblock %}
