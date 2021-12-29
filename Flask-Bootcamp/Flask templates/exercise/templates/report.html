@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<div class='jumbotron'>
+    <h1>We checked your name, {{name}}</h1>
+    {% if all_good %}
+    <p>Your username is secure enough!</p>
+
+    {% else %}
+    <p>You should improve your username!</p>
+    <p>The username did not meet the following requirements:</p>
+    <ul>
+        {% if not lowercase_exists %}
+        <li>You did not use a lowercase letter!</li>
+        {% endif %}
+        {% if not uppercase_exists %}
+        <li>You did not use an uppercase letter!</li>
+        {% endif %}
+        {% if not ends_with_number %}
+        <li>Usernames should end on a number!</li>
+        {% endif %}
+    </ul>
+
+
+    {% endif %}
+</div>
+
+
+
+
+
+{% endblock %}
