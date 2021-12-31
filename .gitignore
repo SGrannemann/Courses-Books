@@ -9,3 +9,5 @@ Hands-on ML/datasets/
 Python-Mega-Course/Book Inventory App/dist/
 Python-Mega-Course/Book Inventory App/build/
 Flask-Bootcamp/Flask-Bootcamp-master/
+**/__pycache__/
+**/migrations/
